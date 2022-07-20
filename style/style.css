@@ -9,7 +9,7 @@
   font-family: "Poppins", sans-serif;
 }
 :root {
-  --primary-color: #cf8026;
+  --primary-color: #fa5c01;
   --background-color: #283136;
   --white-color: #fff;
   --black-color: #000000;
@@ -97,6 +97,7 @@ img {
 .blog-section {
   display: flex;
 }
+
 .blog-section .side-menu {
   width: 310px;
   height: 310px;
@@ -136,6 +137,7 @@ img {
 }
 .blog-card {
   border: 2px solid var(--gray-color);
+  background-color: #e4e0e070;
   border-radius: 10px;
   width: 250px;
   margin-bottom: 30px;
@@ -158,6 +160,7 @@ img {
   padding: 5px 10px;
   margin-top: 20px;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 .blog-card-footer {
   padding-left: 1rem;
@@ -167,10 +170,11 @@ img {
   padding-right: 1rem;
   margin: 10px 0;
 }
-.blog-btn a{
+.blog-btn{
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+.blog-btn a {
   color: var(--white-color);
   padding: 10px 10px;
   font-size: 16px;
@@ -188,16 +192,17 @@ img {
 /* footer section start */
 .footer-area {
   width: 100%;
+  height: auto;
+  padding: 3% 0;
   background-color: var(--background-color);
 }
 .footer-content {
-  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.footer-content h2{
+.footer-content h2 {
   font-size: 40px;
   color: var(--white-color);
   margin-bottom: 30px;
@@ -205,9 +210,72 @@ img {
 .footer-items {
   border-top: 1px solid #ffffff1a;
   padding: 20px;
+  text-align: center;
 }
-.footer-items a{
+.footer-items a {
   color: var(--white-color);
   margin-right: 20px;
+  text-align: center;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons a {
+  width: 35px;
+  height: 35px;
+  color: var(--white-color);
+  background: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.social-icons a:hover {
+  background-color: var(--green-color);
+  transition: all linear 0.4s;
 }
 /* footer section end */
+
+/*********88 upcoming page css start *************888*/
+.match-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 30px;
+}
+
+.match-card {
+  width: 310px;
+  height: 240px;
+  border-radius: 10px;
+  border: 2px solid var(--gray-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.match-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.match-img h1 {
+  padding: 0 20px;
+}
+
+.match-text {
+  text-align: center;
+}
+.match-text h2 {
+  font-size: 18px;
+  padding: 20px 0 7px;
+}
+.match-text span {
+  color: var(--background-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+/***********************8 upcoming page css end *****************8*/
